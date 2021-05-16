@@ -6,5 +6,5 @@ RUN  /bin/bash ~/anaconda.sh -b -p /opt/conda && rm ~/anaconda.sh
 SHELL ["/bin/bash", "-c", "source /opt/conda/bin/activate"]
 SHELL ["conda", "init"]
 #RUN source /opt/conda/bin/activate && conda init
-RUN conda create --name open-mmlab python=3.7 -y && conda activate open-mmlab && conda install cython -y
-RUN conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge -y
+#RUN conda create --name open-mmlab python=3.7 -y && conda activate open-mmlab && conda install cython -y
+#RUN conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge -y
