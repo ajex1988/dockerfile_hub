@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.1-devel-ubuntu18.04
+FROM nvidia/cuda:9.2-devel-ubuntu18.04
 LABEL maintainer="ajex1988@gmail.com"
 RUN apt update && apt install -y curl git vim ninja-build
 RUN curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh -o ~/anaconda.sh
