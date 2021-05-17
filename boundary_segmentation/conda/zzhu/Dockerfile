@@ -1,6 +1,6 @@
 FROM nvidia/cuda:9.2-devel-ubuntu18.04
 LABEL maintainer="ajex1988@gmail.com"
-RUN apt update && apt install -y curl git vim ninja-build libgl1-mesa-glx libglib2.0-0
+RUN apt update && apt install -y curl git vim ninja-build libgl1-mesa-glx libglib2.0-0 python-pip
 RUN pip install ipython imagecorruptions Polygon3 tqdm mmcv==0.4.3
 RUN curl https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh -o ~/anaconda.sh
 RUN  /bin/bash ~/anaconda.sh -b -p /opt/conda && rm ~/anaconda.sh
