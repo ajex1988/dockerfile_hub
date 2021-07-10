@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 LABEL maintainer="ajex1988@gmail.com"
-ENV TZ=US/Atlanta
+ENV TZ=Etc/GMT+6
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN DEBIAN_FRONTEND="noninteractive" apt update && apt install -y python3.6 python3-pip git-all
 RUN pip install opencv-python
